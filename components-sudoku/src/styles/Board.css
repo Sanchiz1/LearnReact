@@ -1,0 +1,10 @@
+.sudoku-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.sudoku-row {
+  display: flex;
+}
