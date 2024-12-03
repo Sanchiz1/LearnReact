@@ -1,0 +1,38 @@
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+button.info {
+    background-color: rgb(99, 99, 201);
+}
+
+button.danger {
+    background-color: rgb(202, 81, 81);
+}
+
+button.success {
+    background-color: rgb(43, 146, 69);
+}
+
+button.warning {
+    background-color: rgb(192, 147, 24);
+}
+
+button:hover {
+    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+}
+
+button:active {
+    background-image: none;
+}
+
+button:disabled {
+    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+}

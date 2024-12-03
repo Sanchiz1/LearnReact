@@ -1,0 +1,21 @@
+.tabGroup {
+  width: fit-content;
+}
+
+.tabGroup button {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.tabGroup button:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.tabGroup button:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.tabGroup button:only-child {
+  border-radius: 10px;
+  margin-left: 0;
+}
