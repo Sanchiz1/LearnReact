@@ -35,11 +35,26 @@
     ))}
     ```
 
-5. Paging
+5. Optimistic Updates
 
-    Articles are fetched by pages which enures fast retreival of data due to limited number of requested articles.
+    RTK Query supports optimistic updates, allowing the UI to react to changes before the server confirms them
 
-6. HOC usage
+   ```js 
+   async onQueryStarted({ id, ...patch }, { dispatch, queryFulfilled }) {
+        const patchResult = dispatch(
+          articlesApi.util.updateQueryData('getArticle', id, (draft) => {
+            Object.assign(draft, patch)
+          }),
+        )
+        try {
+          await queryFulfilled
+        } catch {
+          patchResult.undo()
+        }
+      },
+    ```
+
+7. HOC usage
 
     Created **withErrorDisplay** HOC to add error text to component. Used with Input component to display validation errors.
 
