@@ -1,0 +1,19 @@
+.articleList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  span {
+    font-weight: bold;
+  }
+}

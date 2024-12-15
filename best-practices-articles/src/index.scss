@@ -1,0 +1,51 @@
+:root {
+  /* Global Typography */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Color Scheme */
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-bg: #242424;
+  --color-border: #444;
+  --color-shadow: rgba(0, 0, 0, 0.15);
+  --color-primary: rgb(99, 99, 201);
+  --color-primary-hover-bg: #1e90ff;
+  --color-primary-hover-text: #fff;
+  --color-secondary: #333;
+
+  /* Button */
+  --button-bg: var(--color-primary);
+  --button-text: #fff;
+  --button-hover-bg: var(--color-primary-hover-bg);
+  --button-hover-text: var(--color-primary-hover-text);
+
+  /* Misc */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+input, textarea{
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.87);
+  width: 100%;
+
+  &:focus {
+    border-color: #888;
+  }
+}

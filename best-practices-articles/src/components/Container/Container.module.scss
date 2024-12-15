@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.container-sm {
+    max-width: 576px;
+}
+
+.container-md {
+    max-width: 768px;
+}
+
+.container-lg {
+    max-width: 1200px;
+}
